@@ -6,6 +6,16 @@
 %   British Columbia.  For more information, refer to the file LICENSE
 %   that accompanied this distribution.
 
+% if file extension jpg
+%---
+a = imread ('book.jpg');
+b = imread ('scene.jpg');
+imwrite (a,'a.pgm');
+imwrite (b, 'b.pgm');
+img1 = imread('a.pgm');
+img2 = imread('b.pgm');
+%---
+
 clear
 tic
 img1 = imread('scene.pgm');
